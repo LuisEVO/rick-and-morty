@@ -14,4 +14,8 @@ export class ApiHttpService {
     return this.http.get<CharactersResponse>('https://rickandmortyapi.com/api/character')
     .pipe(map(res => res.results));
   }
+
+  getCharacter(characterId: string): Observable<Character> {
+    return this.http.get<Character>(`https://rickandmortyapi.com/api/character/${characterId}`);
+  }
 }

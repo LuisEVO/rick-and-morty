@@ -11,11 +11,13 @@ import { MatChipsModule } from '@angular/material/chips';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './views/home/home.component';
+import { DetailComponent } from './views/detail/detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
