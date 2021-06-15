@@ -22,13 +22,13 @@ jobs:
         with:
           submodules: true
       - name: Install dependencies
-        run: npm
+        run: yarn
 
       - name: Test
-        run: npm run test
+        run: yarn test
 
       - name: Build
-        run: npm run build
+        run: yarn build
 
       - name: Deploy
         uses: reggionick/s3-deploy@v3
